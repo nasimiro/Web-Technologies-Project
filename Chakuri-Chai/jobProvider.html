@@ -1,0 +1,269 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function test()
+{
+var flag= true;
+var m =document.getElementById("tm");
+var m1=document.getElementById("tm1");
+var m2=document.getElementById("tm2");
+var m3=document.getElementById("tm3");
+var m4=document.getElementById("tm4");
+var m5=document.getElementById("tm5");
+var m6=document.getElementById("tm6");
+var m7=document.getElementById("tm7");
+var m8=document.getElementById("tm8");
+var m9=document.getElementById("tm9");
+var m10=document.getElementById("tm10");
+var m11=document.getElementById("tm11");
+//alert(document.fm.name.value.length);
+//document.write();
+ if(document.fm.name.value.length==0)
+ {
+document.fm.name.focus();
+ m.style.color="red";
+ m.innerHTML="Enter name";
+ flag=false;
+ }
+ if(document.fm.uid.value.length==0)
+ { 
+   document.fm.uid.focus();
+   m1.style.color="red";
+   m1.innerHTML="Enter id";
+  flag=false;
+ 
+ }
+ if(document.fm.pass.value.length==0)
+ { 
+        document.fm.pass.focus();
+		m2.style.color="red";
+        m2.innerHTML="Enter Password";
+        flag=false;
+ }
+ if(document.fm.cpass.value.length==0)
+ {
+       document.fm.cpass.focus();
+	   m3.style.color="red";
+       m3.innerHTML="Enter ConfirmPassword ";
+       flag=false;
+ }
+ 
+ if(document.fm.email.value.length==0)
+ {
+        document.fm.email.focus();
+		m4.style.color="red";
+        m4.innerHTML="Enter Email";
+        flag=false;
+ }
+ if(document.fm.cname.value.length==0)
+ {
+    
+	    document.fm.cname.focus();
+		m5.style.color="red";
+        m5.innerHTML="Enter Company name";
+       flag=false;
+ }
+ if(document.fm.cid.value.length==0)
+ {    
+        document.fm.cid.focus();
+		m6.style.color="red";
+        m6.innerHTML="Enter Company id";
+        flag=false;
+ }
+ if(document.fm.location.value.length==0)
+ {   
+ 
+       document.fm.location.focus();
+	   m7.style.color="red";
+       m7.innerHTML="Enter location";
+       flag=false;
+ 
+ }
+ 
+ if(document.fm.cmail.value.length==0)
+ {      document.fm.cmail.focus();
+		m8.style.color="red";
+        m8.innerHTML="Enter Company  Email ";
+        flag=false;
+ 
+ }
+ if(document.fm.cphn.value.length==0)
+ {      
+        document.fm.cphn.focus();
+		m9.style.color="red";
+        m9.innerHTML="Enter Company  Number ";
+        flag=false;
+ 
+ }
+ if(document.fm.ctype.value.length==0)
+ {      
+        document.fm.ctype.focus();
+		m10.style.color="red";
+        m10.innerHTML="Enter Company  Type ";
+        flag=false;
+ 
+ }
+ if(document.fm.cweb.value.length==0)
+ {      document.fm.cweb.focus();
+		m11.style.color="red";
+        m11.innerHTML="Enter Company  Webside";
+        flag=false;
+ 
+ }
+ return flag;
+ 
+}
+/*function test2()
+ {
+  var m =document.getElementById("tm");
+  var m1=document.getElementById("tm1");
+  var m2=document.getElementById("tm2");
+  var m3=document.getElementById("tm3");
+  var m4=document.getElementById("tm4");
+  var m5=document.getElementById("tm5");
+  var m6=document.getElementById("tm6");
+  var m7=document.getElementById("tm7");
+  var m8=document.getElementById("tm8");
+ 
+  
+  m.innerHTML="";
+  m1.innerHTML="";
+  m2.innerHTML="";
+  m3.innerHTML="";
+  m4.innerHTML="";
+  m5.innerHTML="";
+  m6.innerHTML="";
+  m7.innerHTML="";
+  m8.innerHTML="";
+ 
+ 
+ } */
+function abc(t)
+{
+ //alert(t);
+ document.getElementById(t).innerHTML="";
+
+}
+</script>
+<style> 
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    margin: auto;
+    width: 30%;
+    border-radius: 5px;
+    background-color:;
+    padding: 5px;
+	
+}
+
+body {
+    background-image: url("homePic7.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.button {
+    background-color: #417E7E ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+
+<img src="icon4.png" width="70px" height="60px"/>
+ <span><font size="11" color="Black">Chakuri-Chai</font> <font size="5" color="Black">, Largest Online Job Portal in Bangladesh <br/></font></span>
+ <span> <br/><a href="home.html" class="button">Home</a> <br/> </span>
+ <div align="center">
+        <span><font size="8" color="black">Job Provider <br/><br/></font></span>
+ </div>
+
+
+<Form  action="jobprovider1.php"  method="POST" enctype="multipart/form-data" name ="fm"> 
+
+      
+	  <Input type="text" placeholder= "User name" onclick="abc('tm')"  name="name"/> &nbsp &nbsp <span id="tm"></span> <br/>
+     
+	  <Input  type="text" placeholder= "User id" onclick="abc('tm1')" name="uid"/> &nbsp &nbsp <span id="tm1"></span></br>
+  
+	  <Input  type="password" placeholder= "password" onclick="abc('tm2')"name="pass"/> &nbsp &nbsp <span id="tm2"></span></br>
+	  
+	  <Input  type="password" placeholder= "confirmpass" onclick="abc('tm3')" name="cpass"/> &nbsp &nbsp <span id="tm3"></span></br>
+     
+	  <Input type="text"   placeholder= "Email" onclick="abc('tm4')" name="email"/> &nbsp &nbsp <span id="tm4"></span><br/>
+	 
+	
+ 
+
+ 
+<h2>"Company Detail"</h2> 
+
+ 
+	   <Input type="text" placeholder= "Company name" onclick="abc('tm5')" name="cname" /> &nbsp &nbsp <span id="tm5"></span><br/>
+	  
+	   <Input type="text" placeholder= "Company id" onclick="abc('tm6');" name="cid"/> &nbsp &nbsp <span id="tm6"></span><br/>
+   
+	   <Input type="text" placeholder= "Company Location" onclick="abc('tm7');" name="location"/> &nbsp &nbsp <span id="tm7"></span><br/>
+    
+       <Input type="text" placeholder= "Company Email"  onclick="abc('tm8');" name="cmail"/> &nbsp &nbsp <span id="tm8"></span><br/>
+	   	
+       <Input type="text" placeholder= "Company Phone no." onclick="abc('tm9');" name="cphn" maxlength="11"/> &nbsp &nbsp <span id="tm9"></span><br/>
+   
+	   <Input type="text" placeholder= "Company Type" onclick="abc('tm10');" name="ctype"/> &nbsp &nbsp <span id="tm10"></span><br/>
+    
+       <Input type="text" placeholder= "Company Webside"  onclick="abc('tm11');" name="cweb" /> &nbsp &nbsp <span id="tm11"></span><br/>		
+
+
+	   
+	   <div align="center"><Input type="submit" onclick="return test();" value="Submit" name="sbt"/> </div>
+
+ 
+
+	 
+</Form>
+
+</body>
+</html>
